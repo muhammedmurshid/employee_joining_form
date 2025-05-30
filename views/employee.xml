@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="employee_inherit_related_fields" model="ir.ui.view">
+        <field name="name">employee.form.inherit.example</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <!-- Insert the new field after another field -->
+            <xpath expr="//group[@name='active_group']" position="inside">
+                <field name="related_joinee"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

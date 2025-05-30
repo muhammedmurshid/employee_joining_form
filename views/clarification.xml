@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- Odoo View Definition for Whatsapp Message Form -->
+    <record id="clarification_archive_users" model="ir.ui.view">
+        <field name="name">archive.user.clarification.view.form</field>
+        <field name="model">user.archive.clarification</field>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+            <form string="Archive Users">
+                <div align="center">
+                    <field name="user_id"/>
+                    <field name="employee_form"/>
+                    <field name="clarification"/>
+                    <field name="sure"/>
+                </div>
+                <footer>
+                    <button name="act_archive" string="Archive" type="object" class="oe_highlight" invisible="sure == 0"/>
+                    <button name="cancel" string="Cancel" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="clarification_unarchive_users" model="ir.ui.view">
+        <field name="name">unarchive.user.clarification.view.form</field>
+        <field name="model">user.unarchive.clarification</field>
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+            <form string="UnArchive Users">
+                <div align="center">
+                    <field name="user_id"/>
+                    <field name="employee_form"/>
+                    <field name="clarification"/>
+                    <field name="sure"/>
+                </div>
+                <footer>
+                    <button name="act_unarchive" string="UnArchive" type="object" class="oe_highlight" invisible="sure == 0"/>
+                    <button name="cancel" string="Cancel" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

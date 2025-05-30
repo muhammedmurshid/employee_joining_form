@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="form_view_of_joining_form" model="ir.ui.view">
+        <field name="name">Joining Form</field>
+        <field name="model">employee.joining.form</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="designation"/>
+                <field name="branch"/>
+                <field name="department_id"/>
+                <field name="phone_number"/>
+                <field name="state" widget="badge" decoration-success="state == 'done'"
+                       decoration-info="state == 'draft'" decoration-primary="state == 'confirm'"/>
+                <!--                <field name="active"/>-->
+            </tree>
+        </field>
+    </record>
+
+    <record id="tree_view_of_joining_form" model="ir.ui.view">
+        <field name="name">Joining Form</field>
+        <field name="model">employee.joining.form</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <field name="state" widget="statusbar"/>
+                    <button name="action_confirm_employee" type="object" string="Confirm" class="oe_highlight"
+                            invisible="state != 'draft'" groups="employee_joining_form.hr_joining_form"/>
+                    <button name="action_create_user" type="object" class="oe_highlight" string="Done"
+                            invisible="state != 'confirm'" groups="employee_joining_form.it_joining_form"/>
+                    <button name="action_cancel" string="Reject" type="object" invisible="state in ['done','hr_approval','cancel','archived']"/>
+                    <button name="action_hr_approval" string="Hr Approval" type="object" invisible="state in ['draft','done','cancel','archived']" groups="employee_joining_form.hr_joining_form"/>
+                    <button name="act_archive" string="Archive" type="object" invisible="state in ['draft','hr_approval','cancel','archived']" class="oe_highlight"/>
+                    <button name="act_unarchive" string="Un Archive" type="object" invisible="state in ['draft','hr_approval','cancel','done']"/>
+                </header>
+                <sheet>
+                    <div name="button_box" class="oe_button_box">
+                        <button class="oe_stat_button" type="object" name="action_view_employee" icon="fa-book">
+                            <field string="Employee" name="employee_count" widget="statinfo"/>
+                        </button>
+                    </div>
+<!--                    <div>-->
+<!--                        <button name="action_view_sale_orders"-->
+<!--                                type="object"-->
+<!--                                class="oe_stat_button"-->
+<!--                                icon="fa-dollar">-->
+<!--&lt;!&ndash;                            <field name="sale_order_count" widget="statinfo" string="Sale Orders"/>&ndash;&gt;-->
+<!--                        </button>-->
+<!--                    </div>-->
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="related_employee" invisible="state in ['draft','confirm']"/>
+                            <field name="designation"/>
+                            <field name="branch"/>
+                            <field name="department_id"/>
+                            <field name="phone_number"/>
+                            <field name="office_phone"/>
+                            <field name="office_mail"/>
+                            <field name="gender"/>
+                            <field name="mail_id"/>
+                            <field name="address"/>
+                            <field name="date_of_birth"/>
+                            <field name="date_of_joining"/>
+                            <!--                        &lt;!&ndash;                        <field name="description"/>&ndash;&gt;-->
+                            <!--                        &lt;!&ndash;                        <field name="active"/>&ndash;&gt;-->
+                            <field name="marital_stats"/>
+                            <field name="spouse_name" modifiers="{'invisible': [('marital_stats', '!=', 'married')] }"/>
+<!--                            <field name="spouse_dob" modifiers="{'invisible': [('marital_stats', '!=', 'married')]}"/>-->
+                            <field name="number_of_childes"
+                                   modifiers="{'invisible': [('marital_stats', '!=', 'married')]}"/>
+                            <field name="work_location"/>
+                            <field name="work_place"/>
+
+                        </group>
+                        <group>
+                            <field name="highest_education_college_name"/>
+                            <field name="highest_education_full_time_or_partime"/>
+                            <field name="highest_education_degree"/>
+                            <field name="highest_education_qualification_specialization"/>
+                            <field name="highest_education_qualification_passed_out_month_year"/>
+                            <field name="previous_employment_company_name"/>
+                            <field name="previous_employment_company_location"/>
+                            <field name="previous_employment_company_designation"/>
+                            <field name="previous_employment_company_tenure"/>
+                            <field name="total_years_of_experience"/>
+                            <field name="emergency_contact_person_name"/>
+                            <field name="emergency_contact_person_relationship"/>
+                            <field name="emergency_contact_person_mobile_number"/>
+                            <field name="emergency_contact_person_email"/>
+                            <field name="emergency_contact_person_correspondence_address"/>
+                            <field name="emergency_details_any_allergies_specifically"/>
+                            <field name="nominee_name"/>
+                            <field name="nominee_relation"/>
+                            <field name="nominee_id_proof"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Bank Details">
+                            <group>
+                                <group>
+                                    <field name="bank_name"/>
+                                    <field name="bank_acc_number"/>
+                                    <field name="branch_bank"/>
+                                    <field name="ifsc_code"/>
+                                    <field name="micr_code"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Aadhar And Pan Card Details">
+                            <group>
+                                <group>
+                                    <field name="aadhar_card_number"/>
+                                    <field name="pan_card_number"/>
+
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Private Information">
+                            <group>
+                                <group>
+                                    <field name="marital_stats"/>
+                                    <field name="spouse_name"
+                                           modifiers="{'invisible': [('marital_stats', '!=', 'married')]}"/>
+<!--                                    <field name="spouse_dob"-->
+<!--                                           modifiers="{'invisible': [('marital_stats', '!=', 'married')]}"/>-->
+                                    <field name="name_of_children"
+                                           modifiers="{'invisible': [('marital_stats', '!=', 'married')]}"/>
+                                    <field name="blood_group"/>
+                                    <field name="pf_uan_number"/>
+                                    <field name="esi_ip_number"/>
+
+
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Activities">
+                            <group>
+                                <group>
+                                    <field name="skills"/>
+                                    <field name="certification"/>
+                                    <field name="hobbies"/>
+                                    <field name="active_social_media"/>
+                                    <field name="have_you_done_anchoring"/>
+                                </group>
+                                <group name="Social media url" string="Social Media Urls">
+                                    <field name="insta_url"/>
+                                    <field name="fb_url"/>
+                                    <field name="linkedin_url"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Documents">
+                            <group>
+                                <group>
+                                    <field name="photo"/>
+                                    <field name="upload_cv"/>
+                                    <field name="aadhar_photo"/>
+                                    <field name="pan_photo"/>
+                                    <field name="bank_passbook"/>
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"
+                           widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_of_joining_form" model="ir.actions.act_window">
+        <field name="name">Joining Form</field>
+        <field name="res_model">employee.joining.form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="joining_form_main_menu" name="Joining Form" sequence="10" web_icon="employee_joining_form,static/description/icon.png"/>
+    <menuitem id="joining_form_first_menu" name="Joining Form" parent="joining_form_main_menu"
+              action="action_of_joining_form"/>
+</odoo>

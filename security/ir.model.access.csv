@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_user_joining_form,joining.form,model_employee_joining_form,employee_joining_form.hr_joining_form,1,1,1,1
+access_it_user_joining_form,joining.form,model_employee_joining_form,employee_joining_form.it_joining_form,1,1,1,1
+access_user_archive_clarification,access_user_archive_clarification,model_user_archive_clarification,,1,1,1,1
+access_user_unarchive_clarification,access_user_unarchive_clarification,model_user_unarchive_clarification,,1,1,1,1
