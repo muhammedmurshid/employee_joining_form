@@ -20,6 +20,7 @@ class WebFormController(Controller):
         paan = kw.get('upload_paan')
         aadhar = kw.get('upload_aadhar')
         baank = kw.get('upload_passbook')
+        esi = kw.get('upload_family_esi')
         request.env['employee.joining.form'].sudo().create({
             'name': kw.get('employee_name'),
             'designation': kw.get('designation'),
@@ -47,6 +48,7 @@ class WebFormController(Controller):
             'number_of_childes': kw.get('number_of_children'),
             'upload_cv': base64.b64encode(file.read()),
             'photo': base64.b64encode(photo.read()),
+            'esi_photo' : base64.b64encode(esi.read()),
             'aadhar_photo': base64.b64encode(aadhar.read()),
             'pan_photo': base64.b64encode(paan.read()),
             'bank_passbook': base64.b64encode(baank.read()),

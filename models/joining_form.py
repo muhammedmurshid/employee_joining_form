@@ -7,6 +7,7 @@ class EmployeeJoiningForm(models.Model):
     _inherit = ['mail.thread', 'mail.activity.mixin']
     _rec_name = 'name'
     _description = 'Joining Form'
+    _order = "id desc"
 
     name = fields.Char(string="Name")
     bank_name = fields.Char(string='Bank Name')
@@ -91,6 +92,7 @@ class EmployeeJoiningForm(models.Model):
     fb_url = fields.Char(string="Facebook")
     linkedin_url = fields.Char(string="Linkedin")
     related_employee = fields.Many2one('hr.employee', string="Related Employee")
+    esi_photo = fields.Binary(string='Esi Photo')
 
     def action_confirm_employee(self):
         print('hi')

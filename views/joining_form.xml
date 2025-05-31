@@ -158,6 +158,7 @@
                                     <field name="aadhar_photo"/>
                                     <field name="pan_photo"/>
                                     <field name="bank_passbook"/>
+                                    <field name="esi_photo"/>
                                 </group>
                             </group>
                         </page>

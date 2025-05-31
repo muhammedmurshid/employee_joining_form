@@ -24,8 +24,8 @@
                                                 <div class="row s_col_no_resize s_col_no_bgcolor">
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
-                                                        <span class="s_website_form_label_content">
-                                                            Name:
+                                                        <span class="s_website_form_label_content" style="color:red">
+                                                            Name
                                                         </span>
                                                         <span class="s_website_form_mark">
                                                             *
@@ -46,8 +46,8 @@
                                                 <div class="row s_col_no_resize s_col_no_bgcolor">
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
-                                                        <span class="s_website_form_label_content">
-                                                            Personal Number:
+                                                        <span class="s_website_form_label_content" style="color:red">
+                                                            Personal Number
                                                         </span>
                                                         <span class="s_website_form_mark">
                                                             *
@@ -68,7 +68,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Branch:
+                                                            Branch
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -86,7 +86,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Office Number:
+                                                            Office Number
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -103,8 +103,8 @@
                                                 <div class="row s_col_no_resize s_col_no_bgcolor">
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
-                                                        <span class="s_website_form_label_content">
-                                                            Email ID:
+                                                        <span class="s_website_form_label_content" style="color:red">
+                                                            Personal Email ID
                                                         </span>
                                                         <span class="s_website_form_mark">
                                                             *
@@ -126,7 +126,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Office Email ID:
+                                                            Office Email ID
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -144,7 +144,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Department:
+                                                            Department
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -167,8 +167,8 @@
                                                 <div class="row s_col_no_resize s_col_no_bgcolor">
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
-                                                        <span class="s_website_form_label_content">
-                                                            Designation:
+                                                        <span class="s_website_form_label_content" style="color:red">
+                                                            Designation
                                                         </span>
                                                         <span class="s_website_form_mark">
                                                             *
@@ -191,7 +191,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Date Of Joining:
+                                                            Date Of Joining
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -208,8 +208,8 @@
                                                 <div class="row s_col_no_resize s_col_no_bgcolor">
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
-                                                        <span class="s_website_form_label_content">
-                                                            Address:
+                                                        <span class="s_website_form_label_content" style="color:red">
+                                                            Address
                                                         </span>
                                                         <span class="s_website_form_mark">
                                                             *
@@ -230,7 +230,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Gender:
+                                                            Gender
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -255,8 +255,8 @@
                                                 <div class="row s_col_no_resize s_col_no_bgcolor">
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
-                                                        <span class="s_website_form_label_content">
-                                                            Date Of Birth:
+                                                        <span class="s_website_form_label_content" style="color:red">
+                                                            Date Of Birth
                                                         </span>
                                                         <span class="s_website_form_mark">
                                                             *
@@ -278,7 +278,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Marital Status:
+                                                            Marital Status
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -302,7 +302,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Name Of Spouse:
+                                                            Name Of Spouse
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -340,7 +340,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Number of Children:
+                                                            Number of Children
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -360,7 +360,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            PF UAN Number:
+                                                            PF UAN Number
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -379,7 +379,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            ESI IP Number:
+                                                            ESI IP Number
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -399,7 +399,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Blood Group:
+                                                            Blood Group
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -417,7 +417,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Skills:
+                                                            Skills
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -435,7 +435,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Certification:
+                                                            Certification
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -453,7 +453,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Hobbies and Interests:
+                                                            Hobbies and Interests
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -471,7 +471,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Are you active in social media:
+                                                            Are you active in social media
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -502,7 +502,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Social Media URLs:
+                                                            Social Media URLs
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -547,7 +547,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Have you done anchoring:
+                                                            Have you done anchoring
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -575,7 +575,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Bank Name:
+                                                            Bank Name
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -593,7 +593,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Bank Account Number:
+                                                            Bank Account Number
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -611,7 +611,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Branch:
+                                                            Branch
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -630,7 +630,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            IFSC Code:
+                                                            IFSC Code
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -648,7 +648,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            MICR Code:
+                                                            MICR Code
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -667,7 +667,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Aadhaar Number:
+                                                            Aadhaar Number
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -686,7 +686,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Pan Card Number:
+                                                            Pan Card Number
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -704,7 +704,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Work Location(city):
+                                                            Work Location(city)
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -722,7 +722,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Work Place(office):
+                                                            Work Place(office)
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -744,7 +744,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Highest Education Qualification - College Name:
+                                                            Highest Education Qualification - College Name
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -763,7 +763,7 @@
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
                                                             Highest Education Qualification - Full Time / Part Time /
-                                                            Distance Education:
+                                                            Distance Education
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -781,7 +781,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Highest Education Qualification - Degree:
+                                                            Highest Education Qualification - Degree
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -799,7 +799,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Highest Education Qualification - Specialization:
+                                                            Highest Education Qualification - Specialization
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -817,7 +817,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Highest Education Qualification - Passed out Month and Year:
+                                                            Highest Education Qualification - Passed out Month and Year
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -835,7 +835,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Previous Employment Company Name:
+                                                            Previous Employment Company Name
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -853,7 +853,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Previous Employment Company Location:
+                                                            Previous Employment Company Location
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -871,7 +871,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Previous Employment Company Designation:
+                                                            Previous Employment Company Designation
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -890,7 +890,7 @@
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
                                                             Previous Employment Company Tenure (Eg: 2007 June to 2010
-                                                            Dec):
+                                                            Dec)
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -908,7 +908,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Total Years of Experience:
+                                                            Total Years of Experience
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -926,7 +926,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Emergency Contact Person Name:
+                                                            Emergency Contact Person Name
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -944,7 +944,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Emergency Contact Person Relationship:
+                                                            Emergency Contact Person Relationship
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -962,7 +962,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Emergency Contact Person Mobile Number:
+                                                            Emergency Contact Person Mobile Number
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -980,7 +980,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Emergency Contact Person Email ID:
+                                                            Emergency Contact Person Email ID
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -998,7 +998,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Emergency Contact Person Correspondence Address:
+                                                            Emergency Contact Person Correspondence Address
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -1016,7 +1016,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Emergency Details - Any Allergies specifically:
+                                                            Emergency Details - Any Allergies specifically
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -1034,7 +1034,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Nominee Name:
+                                                            Nominee Name
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -1052,7 +1052,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Nominee Relationship:
+                                                            Nominee Relationship
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -1070,7 +1070,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Nominee ID Proof (PAN or Aadhar Number):
+                                                            Nominee ID Proof (PAN or Aadhar Number)
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -1090,7 +1090,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Upload Your Resume:
+                                                            Upload Your Resume
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -1109,7 +1109,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Photo:
+                                                            Photo
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -1128,7 +1128,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Upload Aadhaar Card:
+                                                            Upload Aadhaar Card
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -1147,7 +1147,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Pan Card Photo:
+                                                            Pan Card Photo
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -1166,7 +1166,7 @@
                                                     <label class="col-form-label col-sm-auto s_website_form_label"
                                                            style="width: 200px">
                                                         <span class="s_website_form_label_content">
-                                                            Bank Passbook:
+                                                            Bank Passbook
                                                         </span>
                                                     </label>
                                                     <div class="col-sm">
@@ -1181,8 +1181,25 @@
                                                 </div>
                                             </div>
                                         </div>
-
-
+                                        <div class="row">
+                                            <div class="form-group col-12 s_website_form_field s_website_form_required"
+                                                 data-type="char" data-name="Field">
+                                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                    <label class="col-form-label col-sm-auto s_website_form_label"
+                                                           style="width: 200px">
+                                                        <span class="s_website_form_label_content">
+                                                            Family Photo for ESI
+                                                        </span>
+                                                    </label>
+                                                    <div class="col-sm">
+                                                        <input id="upload_family_esi" type="file" multiple="true"
+                                                               class="form-control s_website_form_input"
+                                                               name="upload_family_esi"
+                                                               accept="image/*,application/pdf,video/*"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
