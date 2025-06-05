@@ -29,9 +29,9 @@
                     <button name="action_create_user" type="object" class="oe_highlight" string="Done"
                             invisible="state != 'confirm'" groups="employee_joining_form.it_joining_form"/>
                     <button name="action_cancel" string="Reject" type="object" invisible="state in ['done','hr_approval','cancel','archived']"/>
-                    <button name="action_hr_approval" string="Hr Approval" type="object" invisible="state in ['draft','done','cancel','archived']" groups="employee_joining_form.hr_joining_form"/>
-                    <button name="act_archive" string="Archive" type="object" invisible="state in ['draft','hr_approval','cancel','archived']" class="oe_highlight"/>
-                    <button name="act_unarchive" string="Un Archive" type="object" invisible="state in ['draft','hr_approval','cancel','done']"/>
+                    <button name="action_hr_approval" string="Hr Approval" type="object" invisible="state in ['draft','confirm','done','cancel','archived']" groups="employee_joining_form.hr_joining_form"/>
+                    <button name="act_archive" string="Archive" type="object" invisible="state in ['draft','confirm','hr_approval','cancel','archived']" class="oe_highlight"/>
+                    <button name="act_unarchive" string="Un Archive" type="object" invisible="state in ['draft','confirm','hr_approval','cancel','done']"/>
                 </header>
                 <sheet>
                     <div name="button_box" class="oe_button_box">
