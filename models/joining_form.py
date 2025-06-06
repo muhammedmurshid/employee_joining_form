@@ -1,6 +1,6 @@
 from odoo import fields, models, api, _
 from odoo.exceptions import UserError
-
+from datetime import datetime
 
 class EmployeeJoiningForm(models.Model):
     _name = 'employee.joining.form'
@@ -69,6 +69,7 @@ class EmployeeJoiningForm(models.Model):
     previous_employment_company_tenure = fields.Char(string='Previous Employment - Company Tenure')
     total_years_of_experience = fields.Integer(
         string='Total Years Of Experience')
+    data_line_ids = fields.One2many('data.line', 'form_id', 'Data Lines')
     emergency_contact_person_name = fields.Char(string='Emergency Contact Person Name')
     emergency_contact_person_relationship = fields.Char(string='Emergency Contact Person Relationship')
     emergency_contact_person_mobile_number = fields.Char(string='Emergency Contact Person Mobile Number')
@@ -82,17 +83,12 @@ class EmployeeJoiningForm(models.Model):
     gender = fields.Selection([('male', 'Male'), ('female', 'Female'), ('other', 'Other')], string='Gender')
     skills = fields.Text(string="Skills ")
     hobbies = fields.Text(string="Hobbies and Intersets")
-    active_social_media = fields.Selection([('yes', 'Yes'), ('no', 'No')],
-                                               string='Are you active in social media')
-    social_media_urls = fields.Text(string="Social media activities")
-    have_you_done_anchoring = fields.Selection([('yes', 'Yes'), ('no', 'No')],
-                                               string='Have you done anchoring')
     certification = fields.Text(string="Certification")
-    insta_url = fields.Char(string="Instagram")
-    fb_url = fields.Char(string="Facebook")
-    linkedin_url = fields.Char(string="Linkedin")
     related_employee = fields.Many2one('hr.employee', string="Related Employee")
     esi_photo = fields.Binary(string='Esi Photo')
+    resigned_date = fields.Date(string="Resigned Date")
+    archived_on = fields.Many2one('res.users', string="Archived On")
+    added_date = fields.Date(string="Added Date")
 
     def action_confirm_employee(self):
         print('hi')
@@ -114,6 +110,7 @@ class EmployeeJoiningForm(models.Model):
             self.action_create_employee(user)
             # Change the state to 'done'
             self.state = 'hr_approval'
+            self.added_date = datetime.today()
         else:
             raise UserError('please add office mail for this employee')
 
@@ -131,7 +128,6 @@ class EmployeeJoiningForm(models.Model):
             'joining_date': self.date_of_joining,
 
         }
-
         # Create the employee
         employee = self.env['hr.employee'].create(employee_vals)
         last_employee = self.env['hr.employee'].sudo().search([], limit=1, order='id desc')
@@ -189,3 +185,23 @@ class EmployeeJoiningForm(models.Model):
                 'view_mode': 'form',
                 'view_type': 'form',
                 'context': {'default_user_id': self.related_employee.user_id.id, 'default_employee_form': self.id}, }
+
+class HrEmployeeRelation(models.Model):
+    """Model to store employee relationship information."""
+
+    _name = 'hr.employee.relation'
+    _description = 'HR Employee Relation'
+
+    name = fields.Char(string="Relationship",
+                       help="Relationship with the employee")
+
+class DataLine(models.Model):
+    _name = 'data.line'
+    _description = 'Data Lines'
+
+    name = fields.Char('Name')
+    relation = fields.Many2one('hr.employee.relation', 'Relation')
+    mobile_number = fields.Char('Mobile Number', widgets='phone')
+    dob = fields.Date('Date of Birth', convert_timezone=True)
+    form_id = fields.Many2one('employee.joining.form', 'Form Id', ondelete='cascade')
+    photo = fields.Binary(string="Photo")

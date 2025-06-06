@@ -6,21 +6,84 @@ class WebFormController(Controller):
     @route(['/joining_form'], auth='public', website=True)
     def joining_web_form(self, **kwargs):
         department = request.env['hr.department'].sudo().search([])
+        relation = request.env['hr.employee.relation'].sudo().search([('name', '=', 'Father')])
+        relation2 = request.env['hr.employee.relation'].sudo().search([('name', '=', 'Mother')])
+        relation3 = request.env['hr.employee.relation'].sudo().search([])
+        relation4 = request.env['hr.employee.relation'].sudo().search([])
+        relation5 = request.env['hr.employee.relation'].sudo().search([])
         values = {}
         values.update({
             'department': department,
+            'relation': relation,
+            'relation2': relation2,
+            'relation3': relation3,
+            'relation4': relation4,
+            'relation5': relation5
         })
         return request.render('employee_joining_form.joining_web_form_template', values)
 
     @route('/joining_form/submit', type='http', csrf=False, auth='public', website=True, methods=['POST'])
     def web_form_submit(self, **kw):
         print(kw, 'details')
+        father_photo = kw.get('father_photo')
+        mother_photo = kw.get('mother_photo')
+        child_photo = kw.get('child_photo')
+        child2_photo = kw.get('child2_photo')
+        child3_photo = kw.get('child3_photo')
+
+        childes = []
+        # childes.append(1)
+        # childes.append(2)
+        childes.append((0, 0, {
+            'name': kw.get('father_name'),
+            'dob': kw.get('father_dob'),
+            'mobile_number': kw.get('father_number'),
+            'relation': kw.get('father_relation'),
+            'photo': base64.b64encode(father_photo.read()),
+
+        }))
+        childes.append((0, 0, {
+            'name': kw.get('mother_name'),
+            'dob': kw.get('mother_dob'),
+            'mobile_number': kw.get('mother_number'),
+            'relation': kw.get('mother_relation'),
+            'photo': base64.b64encode(mother_photo.read()),
+
+        }))
+        if kw.get('child_dob'):
+            childes.append((0, 0, {
+                'name': kw.get('child_name'),
+                'dob': kw.get('child_dob'),
+                'mobile_number': kw.get('child_number'),
+                'relation': kw.get('child_relation'),
+                'photo': base64.b64encode(child_photo.read()),
+
+            }))
+        if kw.get('child2_dob'):
+            childes.append((0, 0, {
+                'name': kw.get('child2_name'),
+                'dob': kw.get('child2_dob'),
+                'mobile_number': kw.get('child2_number'),
+                'relation': kw.get('child2_relation'),
+                'photo': base64.b64encode(child2_photo.read()),
+
+            }))
+        if kw.get('child3_dob'):
+            childes.append((0, 0, {
+                'name': kw.get('child3_name'),
+                'dob': kw.get('child3_dob'),
+                'mobile_number': kw.get('child3_number'),
+                'relation': kw.get('child3_relation'),
+                'photo': base64.b64encode(child3_photo.read()),
+
+            }))
+
+        print(childes, 'childes')
         file = kw.get('upload_cv')
         photo = kw.get('upload_phone')
         paan = kw.get('upload_paan')
         aadhar = kw.get('upload_aadhar')
         baank = kw.get('upload_passbook')
-        esi = kw.get('upload_family_esi')
         request.env['employee.joining.form'].sudo().create({
             'name': kw.get('employee_name'),
             'designation': kw.get('designation'),
@@ -37,6 +100,7 @@ class WebFormController(Controller):
             'ifsc_code': kw.get('ifsc'),
             'micr_code': kw.get('micr'),
             'branch': kw.get('branch'),
+            'data_line_ids': childes,
             'aadhar_card_number': kw.get('aadhar_number'),
             'pan_card_number': kw.get('pan_number'),
             'marital_stats': kw.get('marital_stats'),
@@ -48,7 +112,6 @@ class WebFormController(Controller):
             'number_of_childes': kw.get('number_of_children'),
             'upload_cv': base64.b64encode(file.read()),
             'photo': base64.b64encode(photo.read()),
-            'esi_photo' : base64.b64encode(esi.read()),
             'aadhar_photo': base64.b64encode(aadhar.read()),
             'pan_photo': base64.b64encode(paan.read()),
             'bank_passbook': base64.b64encode(baank.read()),
@@ -78,13 +141,8 @@ class WebFormController(Controller):
             'nominee_id_proof': kw.get('nominee_id_proof'),
             'skills': kw.get('skills'),
             'hobbies': kw.get('hobbies'),
-            'active_social_media': kw.get('active_social_media'),
-            'social_media_urls': kw.get('social_urls'),
-            'have_you_done_anchoring': kw.get('anchoring'),
             'certification': kw.get('certification'),
-            'insta_url': kw.get('instagram_urls[]'),
-            'fb_url':kw.get('facebook_urls[]'),
-            'linkedin_url': kw.get('linkedin_urls[]')
+
 
             # 'phone': post.get('phone'),
             # 'email': post.get('email'),

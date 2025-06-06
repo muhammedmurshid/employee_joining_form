@@ -7,9 +7,12 @@
             <tree>
                 <field name="name"/>
                 <field name="designation"/>
+                <field name="date_of_joining"/>
                 <field name="branch"/>
                 <field name="department_id"/>
                 <field name="phone_number"/>
+                <field name="resigned_date"/>
+                <field name="archived_on"/>
                 <field name="state" widget="badge" decoration-success="state == 'done'"
                        decoration-info="state == 'draft'" decoration-primary="state == 'confirm'"/>
                 <!--                <field name="active"/>-->
@@ -28,10 +31,16 @@
                             invisible="state != 'draft'" groups="employee_joining_form.hr_joining_form"/>
                     <button name="action_create_user" type="object" class="oe_highlight" string="Done"
                             invisible="state != 'confirm'" groups="employee_joining_form.it_joining_form"/>
-                    <button name="action_cancel" string="Reject" type="object" invisible="state in ['done','hr_approval','cancel','archived']"/>
-                    <button name="action_hr_approval" string="Hr Approval" type="object" invisible="state in ['draft','confirm','done','cancel','archived']" groups="employee_joining_form.hr_joining_form"/>
-                    <button name="act_archive" string="Archive" type="object" invisible="state in ['draft','confirm','hr_approval','cancel','archived']" class="oe_highlight"/>
-                    <button name="act_unarchive" string="Un Archive" type="object" invisible="state in ['draft','confirm','hr_approval','cancel','done']"/>
+                    <button name="action_cancel" string="Reject" type="object"
+                            invisible="state in ['done','hr_approval','cancel','archived']"/>
+                    <button name="action_hr_approval" string="Hr Approval" type="object"
+                            invisible="state in ['draft','confirm','done','cancel','archived']"
+                            groups="employee_joining_form.hr_joining_form"/>
+                    <button name="act_archive" string="Archive" type="object"
+                            invisible="state in ['draft','confirm','hr_approval','cancel','archived']"
+                            class="oe_highlight"/>
+                    <button name="act_unarchive" string="Un Archive" type="object"
+                            invisible="state in ['draft','confirm','hr_approval','cancel','done']"/>
                 </header>
                 <sheet>
                     <div name="button_box" class="oe_button_box">
@@ -39,14 +48,14 @@
                             <field string="Employee" name="employee_count" widget="statinfo"/>
                         </button>
                     </div>
-<!--                    <div>-->
-<!--                        <button name="action_view_sale_orders"-->
-<!--                                type="object"-->
-<!--                                class="oe_stat_button"-->
-<!--                                icon="fa-dollar">-->
-<!--&lt;!&ndash;                            <field name="sale_order_count" widget="statinfo" string="Sale Orders"/>&ndash;&gt;-->
-<!--                        </button>-->
-<!--                    </div>-->
+                    <!--                    <div>-->
+                    <!--                        <button name="action_view_sale_orders"-->
+                    <!--                                type="object"-->
+                    <!--                                class="oe_stat_button"-->
+                    <!--                                icon="fa-dollar">-->
+                    <!--&lt;!&ndash;                            <field name="sale_order_count" widget="statinfo" string="Sale Orders"/>&ndash;&gt;-->
+                    <!--                        </button>-->
+                    <!--                    </div>-->
                     <group>
                         <group>
                             <field name="name"/>
@@ -65,12 +74,13 @@
                             <!--                        &lt;!&ndash;                        <field name="description"/>&ndash;&gt;-->
                             <!--                        &lt;!&ndash;                        <field name="active"/>&ndash;&gt;-->
                             <field name="marital_stats"/>
-                            <field name="spouse_name" modifiers="{'invisible': [('marital_stats', '!=', 'married')] }"/>
-<!--                            <field name="spouse_dob" modifiers="{'invisible': [('marital_stats', '!=', 'married')]}"/>-->
+                            <field name="spouse_name" modifiers="{'invisible': [('marital_stats', '!=', 'married')]}"/>
+                            <!--                            <field name="spouse_dob" modifiers="{'invisible': [('marital_stats', '!=', 'married')]}"/>-->
                             <field name="number_of_childes"
                                    modifiers="{'invisible': [('marital_stats', '!=', 'married')]}"/>
                             <field name="work_location"/>
                             <field name="work_place"/>
+                            <field name="archived_on" invisible="state != 'archived'"/>
 
                         </group>
                         <group>
@@ -96,6 +106,27 @@
                         </group>
                     </group>
                     <notebook>
+                        <page string="Family Details">
+                            <field name="data_line_ids" string="Family Details">
+                                <tree editable="bottom">
+                                    <field name="name"/>
+                                    <field name="relation"/>
+                                    <field name="mobile_number"/>
+                                    <field name="dob"/>
+                                    <field name="photo"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Dates">
+                            <group>
+                                <group>
+                                    <field name="added_date"/>
+                                    <field name="create_date"/>
+                                    <field name="resigned_date" invisible="state != 'archived'"/>
+
+                                </group>
+                            </group>
+                        </page>
                         <page string="Bank Details">
                             <group>
                                 <group>
@@ -122,15 +153,13 @@
                                     <field name="marital_stats"/>
                                     <field name="spouse_name"
                                            modifiers="{'invisible': [('marital_stats', '!=', 'married')]}"/>
-<!--                                    <field name="spouse_dob"-->
-<!--                                           modifiers="{'invisible': [('marital_stats', '!=', 'married')]}"/>-->
+                                    <!--                                    <field name="spouse_dob"-->
+                                    <!--                                           modifiers="{'invisible': [('marital_stats', '!=', 'married')]}"/>-->
                                     <field name="name_of_children"
                                            modifiers="{'invisible': [('marital_stats', '!=', 'married')]}"/>
                                     <field name="blood_group"/>
                                     <field name="pf_uan_number"/>
                                     <field name="esi_ip_number"/>
-
-
                                 </group>
                             </group>
                         </page>
@@ -140,14 +169,12 @@
                                     <field name="skills"/>
                                     <field name="certification"/>
                                     <field name="hobbies"/>
-                                    <field name="active_social_media"/>
-                                    <field name="have_you_done_anchoring"/>
                                 </group>
-                                <group name="Social media url" string="Social Media Urls">
-                                    <field name="insta_url"/>
-                                    <field name="fb_url"/>
-                                    <field name="linkedin_url"/>
-                                </group>
+                                <!--                                <group name="Social media url" string="Social Media Urls">-->
+                                <!--                                    <field name="insta_url"/>-->
+                                <!--                                    <field name="fb_url"/>-->
+                                <!--                                    <field name="linkedin_url"/>-->
+                                <!--                                </group>-->
                             </group>
                         </page>
                         <page string="Documents">
@@ -158,7 +185,6 @@
                                     <field name="aadhar_photo"/>
                                     <field name="pan_photo"/>
                                     <field name="bank_passbook"/>
-                                    <field name="esi_photo"/>
                                 </group>
                             </group>
                         </page>
@@ -180,7 +206,8 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="joining_form_main_menu" name="Joining Form" sequence="10" web_icon="employee_joining_form,static/description/icon.png"/>
+    <menuitem id="joining_form_main_menu" name="Joining Form" sequence="10"
+              web_icon="employee_joining_form,static/description/icon.png"/>
     <menuitem id="joining_form_first_menu" name="Joining Form" parent="joining_form_main_menu"
               action="action_of_joining_form"/>
 </odoo>

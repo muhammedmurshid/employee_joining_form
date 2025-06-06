@@ -464,109 +464,109 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="form-group col-12 s_website_form_field s_website_form_required"
-                                                 data-type="selection" data-name="Field">
-                                                <div class="row s_col_no_resize s_col_no_bgcolor">
-                                                    <label class="col-form-label col-sm-auto s_website_form_label"
-                                                           style="width: 200px">
-                                                        <span class="s_website_form_label_content">
-                                                            Are you active in social media
-                                                        </span>
-                                                    </label>
-                                                    <div class="col-sm">
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio"
-                                                                   name="active_social_media"
-                                                                   id="active_social_media_yes" value="yes"/>
-                                                            <label class="form-check-label"
-                                                                   for="active_social_media_yes">Yes
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio"
-                                                                   name="active_social_media"
-                                                                   id="active_social_media_no" value="no"/>
-                                                            <label class="form-check-label"
-                                                                   for="active_social_media_no">No
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-12 s_website_form_field s_website_form_required"
-                                                 data-type="char" data-name="Field">
-                                                <div class="row s_col_no_resize s_col_no_bgcolor">
-                                                    <label class="col-form-label col-sm-auto s_website_form_label"
-                                                           style="width: 200px">
-                                                        <span class="s_website_form_label_content">
-                                                            Social Media URLs
-                                                        </span>
-                                                    </label>
-                                                    <div class="col-sm">
-                                                        <table class="table table-bordered" id="social_media_table">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Instagram</th>
-                                                                    <th>Facebook</th>
-                                                                    <th>LinkedIn</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <input type="url" class="form-control"
-                                                                               name="instagram_urls[]"
-                                                                               placeholder="Instagram URL"/>
-                                                                    </td>
-                                                                    <td>
-                                                                        <input type="url" class="form-control"
-                                                                               name="facebook_urls[]"
-                                                                               placeholder="Facebook URL"/>
-                                                                    </td>
-                                                                    <td>
-                                                                        <input type="url" class="form-control"
-                                                                               name="linkedin_urls[]"
-                                                                               placeholder="LinkedIn URL"/>
-                                                                    </td>
+                                        <!--                                        <div class="row">-->
+                                        <!--                                            <div class="form-group col-12 s_website_form_field s_website_form_required"-->
+                                        <!--                                                 data-type="selection" data-name="Field">-->
+                                        <!--                                                <div class="row s_col_no_resize s_col_no_bgcolor">-->
+                                        <!--                                                    <label class="col-form-label col-sm-auto s_website_form_label"-->
+                                        <!--                                                           style="width: 200px">-->
+                                        <!--                                                        <span class="s_website_form_label_content">-->
+                                        <!--                                                            Are you active in social media-->
+                                        <!--                                                        </span>-->
+                                        <!--                                                    </label>-->
+                                        <!--                                                    <div class="col-sm">-->
+                                        <!--                                                        <div class="form-check form-check-inline">-->
+                                        <!--                                                            <input class="form-check-input" type="radio"-->
+                                        <!--                                                                   name="active_social_media"-->
+                                        <!--                                                                   id="active_social_media_yes" value="yes"/>-->
+                                        <!--                                                            <label class="form-check-label"-->
+                                        <!--                                                                   for="active_social_media_yes">Yes-->
+                                        <!--                                                            </label>-->
+                                        <!--                                                        </div>-->
+                                        <!--                                                        <div class="form-check form-check-inline">-->
+                                        <!--                                                            <input class="form-check-input" type="radio"-->
+                                        <!--                                                                   name="active_social_media"-->
+                                        <!--                                                                   id="active_social_media_no" value="no"/>-->
+                                        <!--                                                            <label class="form-check-label"-->
+                                        <!--                                                                   for="active_social_media_no">No-->
+                                        <!--                                                            </label>-->
+                                        <!--                                                        </div>-->
+                                        <!--                                                    </div>-->
+                                        <!--                                                </div>-->
+                                        <!--                                            </div>-->
+                                        <!--                                        </div>-->
+                                        <!--                                        <div class="row">-->
+                                        <!--                                            <div class="form-group col-12 s_website_form_field s_website_form_required"-->
+                                        <!--                                                 data-type="char" data-name="Field">-->
+                                        <!--                                                <div class="row s_col_no_resize s_col_no_bgcolor">-->
+                                        <!--                                                    <label class="col-form-label col-sm-auto s_website_form_label"-->
+                                        <!--                                                           style="width: 200px">-->
+                                        <!--                                                        <span class="s_website_form_label_content">-->
+                                        <!--                                                            Social Media URLs-->
+                                        <!--                                                        </span>-->
+                                        <!--                                                    </label>-->
+                                        <!--                                                    <div class="col-sm">-->
+                                        <!--                                                        <table class="table table-bordered" id="social_media_table">-->
+                                        <!--                                                            <thead>-->
+                                        <!--                                                                <tr>-->
+                                        <!--                                                                    <th>Instagram</th>-->
+                                        <!--                                                                    <th>Facebook</th>-->
+                                        <!--                                                                    <th>LinkedIn</th>-->
+                                        <!--                                                                </tr>-->
+                                        <!--                                                            </thead>-->
+                                        <!--                                                            <tbody>-->
+                                        <!--                                                                <tr>-->
+                                        <!--                                                                    <td>-->
+                                        <!--                                                                        <input type="url" class="form-control"-->
+                                        <!--                                                                               name="instagram_urls[]"-->
+                                        <!--                                                                               placeholder="Instagram URL"/>-->
+                                        <!--                                                                    </td>-->
+                                        <!--                                                                    <td>-->
+                                        <!--                                                                        <input type="url" class="form-control"-->
+                                        <!--                                                                               name="facebook_urls[]"-->
+                                        <!--                                                                               placeholder="Facebook URL"/>-->
+                                        <!--                                                                    </td>-->
+                                        <!--                                                                    <td>-->
+                                        <!--                                                                        <input type="url" class="form-control"-->
+                                        <!--                                                                               name="linkedin_urls[]"-->
+                                        <!--                                                                               placeholder="LinkedIn URL"/>-->
+                                        <!--                                                                    </td>-->
 
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <!--                                                                </tr>-->
+                                        <!--                                                            </tbody>-->
+                                        <!--                                                        </table>-->
+                                        <!--                                                    </div>-->
+                                        <!--                                                </div>-->
+                                        <!--                                            </div>-->
+                                        <!--                                        </div>-->
 
-                                        <div class="row">
-                                            <div class="form-group col-12 s_website_form_field s_website_form_required"
-                                                 data-type="selection" data-name="Field">
-                                                <div class="row s_col_no_resize s_col_no_bgcolor">
-                                                    <label class="col-form-label col-sm-auto s_website_form_label"
-                                                           style="width: 200px">
-                                                        <span class="s_website_form_label_content">
-                                                            Have you done anchoring
-                                                        </span>
-                                                    </label>
-                                                    <div class="col-sm">
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio"
-                                                                   name="anchoring" id="anchoring_yes" value="yes"/>
-                                                            <label class="form-check-label" for="anchoring_yes">Yes
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" type="radio"
-                                                                   name="anchoring" id="anchoring_no" value="no"/>
-                                                            <label class="form-check-label" for="anchoring_no">No
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <!--                                        <div class="row">-->
+                                        <!--                                            <div class="form-group col-12 s_website_form_field s_website_form_required"-->
+                                        <!--                                                 data-type="selection" data-name="Field">-->
+                                        <!--                                                <div class="row s_col_no_resize s_col_no_bgcolor">-->
+                                        <!--                                                    <label class="col-form-label col-sm-auto s_website_form_label"-->
+                                        <!--                                                           style="width: 200px">-->
+                                        <!--                                                        <span class="s_website_form_label_content">-->
+                                        <!--                                                            Have you done anchoring-->
+                                        <!--                                                        </span>-->
+                                        <!--                                                    </label>-->
+                                        <!--                                                    <div class="col-sm">-->
+                                        <!--                                                        <div class="form-check form-check-inline">-->
+                                        <!--                                                            <input class="form-check-input" type="radio"-->
+                                        <!--                                                                   name="anchoring" id="anchoring_yes" value="yes"/>-->
+                                        <!--                                                            <label class="form-check-label" for="anchoring_yes">Yes-->
+                                        <!--                                                            </label>-->
+                                        <!--                                                        </div>-->
+                                        <!--                                                        <div class="form-check form-check-inline">-->
+                                        <!--                                                            <input class="form-check-input" type="radio"-->
+                                        <!--                                                                   name="anchoring" id="anchoring_no" value="no"/>-->
+                                        <!--                                                            <label class="form-check-label" for="anchoring_no">No-->
+                                        <!--                                                            </label>-->
+                                        <!--                                                        </div>-->
+                                        <!--                                                    </div>-->
+                                        <!--                                                </div>-->
+                                        <!--                                            </div>-->
+                                        <!--                                        </div>-->
 
                                         <div class="row">
                                             <div class="form-group col-12 s_website_form_field s_website_form_required"
@@ -1181,27 +1181,351 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="form-group col-12 s_website_form_field s_website_form_required"
-                                                 data-type="char" data-name="Field">
+                                        <!--                                        <div class="row">-->
+                                        <!--                                            <div class="form-group col-12 s_website_form_field s_website_form_required"-->
+                                        <!--                                                 data-type="char" data-name="Field">-->
+                                        <!--                                                <div class="row s_col_no_resize s_col_no_bgcolor">-->
+                                        <!--                                                    <label class="col-form-label col-sm-auto s_website_form_label"-->
+                                        <!--                                                           style="width: 200px">-->
+                                        <!--                                                        <span class="s_website_form_label_content">-->
+                                        <!--                                                            Family Photo for ESI-->
+                                        <!--                                                        </span>-->
+                                        <!--                                                    </label>-->
+                                        <!--                                                    <div class="col-sm">-->
+                                        <!--                                                        <input id="upload_family_esi" type="file" multiple="true"-->
+                                        <!--                                                               class="form-control s_website_form_input"-->
+                                        <!--                                                               name="upload_family_esi"-->
+                                        <!--                                                               accept="image/*,application/pdf,video/*"/>-->
+                                        <!--                                                    </div>-->
+                                        <!--                                                </div>-->
+                                        <!--                                            </div>-->
+                                        <!--                                        </div>-->
+
+                                    </div>
+                                    <div class="form-group">
+                                        <div class='row ml-1'
+                                             style="width:99%;">
+                                            <div class="form-group col-12 show_total_project">
                                                 <div class="row s_col_no_resize s_col_no_bgcolor">
-                                                    <label class="col-form-label col-sm-auto s_website_form_label"
-                                                           style="width: 200px">
-                                                        <span class="s_website_form_label_content">
-                                                            Family Photo for ESI
-                                                        </span>
-                                                    </label>
-                                                    <div class="col-sm">
-                                                        <input id="upload_family_esi" type="file" multiple="true"
-                                                               class="form-control s_website_form_input"
-                                                               name="upload_family_esi"
-                                                               accept="image/*,application/pdf,video/*"/>
-                                                    </div>
+                                                    <table class="table table-bordered mt-3 total_project_costs">
+                                                        <thead>
+                                                            <tr>
+                                                                <td>
+                                                                    <strong>
+                                                                        Name
+                                                                    </strong>
+                                                                </td>
+                                                                <td>
+                                                                    <strong>Relation
+                                                                    </strong>
+                                                                </td>
+                                                                <td>
+                                                                    <strong>Contact Number
+                                                                    </strong>
+                                                                </td>
+                                                                <td>
+                                                                    <strong>DOB
+                                                                    </strong>
+                                                                </td>
+                                                                <td>
+                                                                    <strong>Photo
+                                                                    </strong>
+                                                                </td>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <div class="collapse">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <input required="True"
+                                                                               type="text"
+                                                                               class="form-control"
+                                                                               name="father_name"
+                                                                               placeholder="Father Name"
+                                                                               id="father_name"/>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="d-flex">
+                                                                            <select name="father_relation"
+                                                                                    t-attf-class="form-control s_website_form_input"
+                                                                                    required="1">
+                                                                                <t t-foreach="relation or []"
+                                                                                   t-as="relation">
+                                                                                    <option t-att-value="relation.id">
+                                                                                        <t t-esc="relation.name"/>
+                                                                                    </option>
+                                                                                </t>
+                                                                            </select>
+
+
+                                                                            <!--                                                                            <input required="True"-->
+                                                                            <!--                                                                                   placeholder="Father Relation"-->
+                                                                            <!--                                                                                   type="number"-->
+                                                                            <!--                                                                                   class="form-control total_cost"-->
+                                                                            <!--                                                                                   name="child2_age"-->
+                                                                            <!--                                                                                   id="child2_age"/>-->
+                                                                        </div>
+
+                                                                    </td>
+                                                                    <td>
+                                                                        <input required="True"
+                                                                               type="number"
+                                                                               class="form-control"
+                                                                               name="father_number"
+                                                                               placeholder="Father Number"
+                                                                               id="father_number"/>
+                                                                    </td>
+                                                                    <td>
+                                                                        <input required="True"
+                                                                               type="date"
+                                                                               class="form-control"
+                                                                               name="father_dob"
+                                                                               placeholder="Father DOB"
+                                                                               id="father_dob"/>
+                                                                    </td>
+                                                                    <td>
+                                                                        <input required="True"
+                                                                               type="file"
+                                                                               accept="image/*"
+                                                                               class="form-control"
+                                                                               name="father_photo"
+                                                                               id="father_photo"/>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <input required="True"
+                                                                               type="text"
+                                                                               class="form-control"
+                                                                               name="mother_name"
+                                                                               placeholder="Mother Name"
+                                                                               id="mother_name"/>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="d-flex">
+                                                                            <select name="mother_relation"
+                                                                                    t-attf-class="form-control s_website_form_input"
+                                                                                    required="1">
+                                                                                <t t-foreach="relation2 or []"
+                                                                                   t-as="relation">
+                                                                                    <option t-att-value="relation.id">
+                                                                                        <t t-esc="relation.name"/>
+                                                                                    </option>
+                                                                                </t>
+                                                                            </select>
+
+
+                                                                            <!--                                                                            <input required="True"-->
+                                                                            <!--                                                                                   placeholder="Father Relation"-->
+                                                                            <!--                                                                                   type="number"-->
+                                                                            <!--                                                                                   class="form-control total_cost"-->
+                                                                            <!--                                                                                   name="child2_age"-->
+                                                                            <!--                                                                                   id="child2_age"/>-->
+                                                                        </div>
+
+                                                                    </td>
+                                                                    <td>
+                                                                        <input required="True"
+                                                                               type="number"
+                                                                               class="form-control"
+                                                                               name="mother_number"
+                                                                               placeholder="Mother Number"
+                                                                               id="mother_number"/>
+                                                                    </td>
+                                                                    <td>
+                                                                        <input required="True"
+                                                                               type="date"
+                                                                               class="form-control"
+                                                                               name="mother_dob"
+                                                                               placeholder="Mother DOB"
+                                                                               id="mother_dob"/>
+                                                                    </td>
+                                                                    <td>
+                                                                        <input required="True"
+                                                                               type="file"
+                                                                               accept="image/*"
+                                                                               class="form-control"
+                                                                               name="mother_photo"
+                                                                               id="mother_photo"/>
+                                                                    </td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <input
+                                                                                type="text"
+                                                                                class="form-control"
+                                                                                name="child_name"
+                                                                                placeholder="Child Name"
+                                                                                id="child_name"/>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="d-flex">
+                                                                            <select name="child_relation"
+                                                                                    t-attf-class="form-control s_website_form_input"
+                                                                                    required="1">
+                                                                                <t t-foreach="relation3 or []"
+                                                                                   t-as="relation">
+                                                                                    <option t-att-value="relation.id">
+                                                                                        <t t-esc="relation.name"/>
+                                                                                    </option>
+                                                                                </t>
+                                                                            </select>
+                                                                        </div>
+
+                                                                    </td>
+                                                                    <td>
+                                                                        <input
+                                                                                type="number"
+                                                                                class="form-control"
+                                                                                name="child_number"
+
+                                                                                id="child_number"/>
+                                                                    </td>
+                                                                    <td>
+                                                                        <input
+                                                                                type="date"
+                                                                                class="form-control"
+                                                                                name="child_dob"
+                                                                                placeholder="Child DOB"
+                                                                                id="child_dob"/>
+                                                                    </td>
+                                                                    <td>
+                                                                        <input required="True"
+                                                                               type="file"
+                                                                               accept="image/*"
+                                                                               class="form-control"
+                                                                               name="child_photo"
+                                                                               id="child_photo"/>
+                                                                    </td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <input
+                                                                                type="text"
+                                                                                class="form-control"
+                                                                                name="child2_name"
+                                                                                placeholder="Child Name"
+                                                                                id="child2_name"/>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="d-flex">
+                                                                            <select name="child2_relation"
+                                                                                    t-attf-class="form-control s_website_form_input"
+                                                                                    required="1">
+                                                                                <t t-foreach="relation4 or []"
+                                                                                   t-as="relation">
+                                                                                    <option t-att-value="relation.id">
+                                                                                        <t t-esc="relation.name"/>
+                                                                                    </option>
+                                                                                </t>
+                                                                            </select>
+                                                                        </div>
+
+                                                                    </td>
+                                                                    <td>
+                                                                        <input
+                                                                                type="number"
+                                                                                class="form-control"
+                                                                                name="child2_number"
+
+                                                                                id="child2_number"/>
+                                                                    </td>
+                                                                    <td>
+                                                                        <input
+                                                                                type="date"
+                                                                                class="form-control"
+                                                                                name="child2_dob"
+                                                                                placeholder="Child DOB"
+                                                                                id="child2_dob"/>
+                                                                    </td>
+                                                                    <td>
+                                                                        <input required="True"
+                                                                               type="file"
+                                                                               accept="image/*"
+                                                                               class="form-control"
+                                                                               name="child2_photo"
+                                                                               id="child2_photo"/>
+                                                                    </td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <input
+                                                                                type="text"
+                                                                                class="form-control"
+                                                                                name="child3_name"
+                                                                                placeholder="Child Name"
+                                                                                id="child3_name"/>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="d-flex">
+                                                                            <select name="child3_relation"
+                                                                                    t-attf-class="form-control s_website_form_input"
+                                                                                    required="1">
+                                                                                <t t-foreach="relation5 or []"
+                                                                                   t-as="relation">
+                                                                                    <option t-att-value="relation.id">
+                                                                                        <t t-esc="relation.name"/>
+                                                                                    </option>
+                                                                                </t>
+                                                                            </select>
+
+
+                                                                            <!--                                                                            <input required="True"-->
+                                                                            <!--                                                                                   placeholder="Father Relation"-->
+                                                                            <!--                                                                                   type="number"-->
+                                                                            <!--                                                                                   class="form-control total_cost"-->
+                                                                            <!--                                                                                   name="child2_age"-->
+                                                                            <!--                                                                                   id="child2_age"/>-->
+                                                                        </div>
+
+                                                                    </td>
+                                                                    <td>
+                                                                        <input
+                                                                                type="number"
+                                                                                class="form-control"
+                                                                                name="child3_number"
+
+                                                                                id="child3_number"/>
+                                                                    </td>
+                                                                    <td>
+                                                                        <input
+                                                                                type="date"
+                                                                                class="form-control"
+                                                                                name="child3_dob"
+                                                                                placeholder="Child DOB"
+                                                                                id="child3_dob"/>
+                                                                    </td>
+                                                                    <td>
+                                                                        <input required="True"
+                                                                               type="file"
+                                                                               accept="image/*"
+                                                                               class="form-control"
+                                                                               name="child3_photo"
+                                                                               id="child3_photo"/>
+                                                                    </td>
+
+                                                                </tr>
+                                                            </tbody>
+                                                        </div>
+                                                    </table>
                                                 </div>
+                                                <!--                                                    <textarea-->
+                                                <!--                                                              name="data_line_ids">-->
+                                                <!--                                                    </textarea>-->
+                                                <!--                                                    <button type="button"-->
+                                                <!--                                                            class="btn btn-info add_total_project button-color"-->
+                                                <!--                                                            style="float: right; margin-right: -15px;">-->
+                                                <!--                                                        <i class="fa fa-plus"/>-->
+                                                <!--                                                    </button>-->
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
 
 

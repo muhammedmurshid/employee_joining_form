@@ -3,3 +3,6 @@ access_hr_user_joining_form,joining.form,model_employee_joining_form,employee_jo
 access_it_user_joining_form,joining.form,model_employee_joining_form,employee_joining_form.it_joining_form,1,1,1,1
 access_user_archive_clarification,access_user_archive_clarification,model_user_archive_clarification,,1,1,1,1
 access_user_unarchive_clarification,access_user_unarchive_clarification,model_user_unarchive_clarification,,1,1,1,1
+
+access_data_line,access_data_line,model_data_line,,1,1,1,1
+access_employee_relation,access_data_line,model_data_line,,1,1,1,1

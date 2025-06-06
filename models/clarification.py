@@ -1,5 +1,6 @@
 from odoo import fields,models,api,_
 from odoo.exceptions import ValidationError, UserError
+from datetime import datetime
 
 class UserArchiveClarification(models.TransientModel):
     _name = "user.archive.clarification"
@@ -14,6 +15,8 @@ class UserArchiveClarification(models.TransientModel):
             self.user_id.active = 0
             self.user_id.employee_id.active = 0
             self.employee_form.state = 'archived'
+            self.employee_form.resigned_date = datetime.today()
+            self.employee_form.archived_on = self.env.user.id
         else:
             raise UserError(
                 _("Please Add Related Employee"))
