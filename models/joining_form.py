@@ -88,7 +88,18 @@ class EmployeeJoiningForm(models.Model):
     esi_photo = fields.Binary(string='Esi Photo')
     resigned_date = fields.Date(string="Resigned Date")
     archived_on = fields.Many2one('res.users', string="Archived On")
-    added_date = fields.Date(string="Added Date")
+    added_date = fields.Date(string="Added Date", )
+    created_by = fields.Char(string="Created By", compute='_compute_create_user', store=1)
+
+    @api.depends('create_uid')
+    def _compute_create_user(self):
+        for i in self:
+            if i.create_uid:
+                print(i.create_uid.name, 'created byy')
+                if i.create_uid.name == 'Public user':
+                    i.created_by = i.name
+                else:
+                    i.created_by = i.create_uid.name
 
     def action_confirm_employee(self):
         print('hi')

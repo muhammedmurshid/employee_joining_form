@@ -11,6 +11,8 @@
                 <field name="branch"/>
                 <field name="department_id"/>
                 <field name="phone_number"/>
+                <field name="create_date"/>
+                <field name="created_by"/>
                 <field name="resigned_date"/>
                 <field name="archived_on"/>
                 <field name="state" widget="badge" decoration-success="state == 'done'"
