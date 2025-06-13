@@ -6,6 +6,7 @@ class WebFormController(Controller):
     @route(['/joining_form'], auth='public', website=True)
     def joining_web_form(self, **kwargs):
         department = request.env['hr.department'].sudo().search([])
+        branch = request.env['op.branch'].sudo().search([])
         relation = request.env['hr.employee.relation'].sudo().search([('name', '=', 'Father')])
         relation2 = request.env['hr.employee.relation'].sudo().search([('name', '=', 'Mother')])
         relation3 = request.env['hr.employee.relation'].sudo().search([])
@@ -14,6 +15,7 @@ class WebFormController(Controller):
         values = {}
         values.update({
             'department': department,
+            'branch': branch,
             'relation': relation,
             'relation2': relation2,
             'relation3': relation3,
@@ -99,7 +101,8 @@ class WebFormController(Controller):
             'bank_acc_number': kw.get('account_number'),
             'ifsc_code': kw.get('ifsc'),
             'micr_code': kw.get('micr'),
-            'branch': kw.get('branch'),
+            # 'branch': kw.get('branch'),
+            'branch_id': kw.get('branch_id'),
             'data_line_ids': childes,
             'aadhar_card_number': kw.get('aadhar_number'),
             'pan_card_number': kw.get('pan_number'),

@@ -52,6 +52,7 @@ class EmployeeJoiningForm(models.Model):
     father_number = fields.Char(string='Father Number')
     mother_number = fields.Char(string='Mother Number')
     branch = fields.Char(string='Branch')
+    branch_id = fields.Many2one('op.branch', string="Branch")
     department_id = fields.Many2one('hr.department', string='Department')
     work_location = fields.Char(string='Work Location(city)')
     work_place = fields.Char(string='Work Place(office)')
@@ -137,7 +138,12 @@ class EmployeeJoiningForm(models.Model):
             'user_id': user.id,
             'related_joinee': self.id,
             'joining_date': self.date_of_joining,
-
+            'birthday': self.date_of_birth,
+            'gender': self.gender,
+            'marital': self.marital_stats,
+            'private_email': self.mail_id,
+            'private_street': self.address,
+            'branch_id': self.branch_id.id
         }
         # Create the employee
         employee = self.env['hr.employee'].create(employee_vals)

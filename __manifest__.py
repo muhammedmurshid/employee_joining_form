@@ -11,7 +11,7 @@
     'license': 'LGPL-3',
     'depends': [
         'base',  # List of module dependencies
-        'mail', 'web', 'hr'
+        'mail', 'web', 'hr','logic_base_17'
         # Add other module dependencies here
     ],
     'data': [
@@ -23,7 +23,6 @@
         'views/clarification.xml'
 
     ],
-
 
     'installable': True,  # Whether the module can be installed
     'application': False,  # Set to True if it's an application module
